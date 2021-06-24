@@ -96,7 +96,7 @@ jobs:
         #echo "自定义项=y" >> .config
         #########################################################################################
         sudo ./clear_tree
-        sudo ./build_firmware_modify $M 0
+        sudo ./build_firmware_modify $NEWIFI-MINI 0
         sudo mv -f images/*.trx /opt/images/
     - name : Upload packages
       uses: actions/upload-artifact@master
